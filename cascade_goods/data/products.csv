@@ -1,0 +1,151 @@
+sku,product_name,category,subcategory,brand,is_private_label,unit_cost,list_price,current_price,margin_pct,launch_date,is_active,weight_kg,shipping_class,return_rate
+SKU-10001,Halcyon Nova Stand,Accessories,Stand,Halcyon,False,49.39,86.11,73.19,0.426,2023-09-18,True,0.7,Small,0.023
+SKU-10002,Pinemark Pulse Headset,Gaming,Headset,Pinemark,False,351.36,464.95,464.95,0.244,2023-11-07,True,1.1,Standard,0.066
+SKU-10003,Northpeak Pulse Case,Accessories,Case,Northpeak,False,37.82,47.71,45.32,0.207,2023-07-07,True,0.71,Small,0.029
+SKU-10004,"Kestrel Apex 2-in-1 16""",Laptops,2-in-1,Kestrel,False,2104.59,2657.72,2657.72,0.208,2022-02-25,True,1.73,Standard,0.093
+SKU-10005,Pinemark Core Controller,Gaming,Controller,Pinemark,False,317.83,482.08,457.98,0.341,2022-03-12,True,3.18,Standard,0.106
+SKU-10006,Cascade Basics Core Earbuds,Audio,Earbuds,Cascade Basics,True,177.96,415.85,415.85,0.572,2023-08-04,True,0.23,Small,0.079
+SKU-10007,Halcyon Nova Stand,Accessories,Stand,Halcyon,False,41.94,71.7,71.7,0.415,2023-04-23,True,0.62,Small,0.035
+SKU-10008,Halcyon Aero Fitness Band 45mm,Wearables,Fitness Band,Halcyon,False,155.02,277.96,277.96,0.442,2023-02-12,True,0.05,Small,0.121
+SKU-10009,"Vireo Core Budget HD 85""",TVs,Budget HD,Vireo,False,1126.11,1573.93,1573.93,0.285,2023-12-28,True,28.73,Oversized,0.071
+SKU-10010,"Pinemark Pulse Pro 8""",Tablets,Pro,Pinemark,False,643.4,966.83,966.83,0.335,2022-03-07,True,0.6,Small,0.101
+SKU-10011,Pinemark Core Console,Gaming,Console,Pinemark,False,292.04,455.99,455.99,0.36,2022-08-08,True,0.62,Small,0.112
+SKU-10012,Kestrel Onyx Action,Cameras,Action,Kestrel,False,2290.89,3141.55,3141.55,0.271,2022-02-27,True,0.65,Small,0.078
+SKU-10013,"Lumen Lyra Standard 10""",Tablets,Standard,Lumen,False,238.52,312.13,312.13,0.236,2023-02-27,True,0.69,Small,0.097
+SKU-10014,Northpeak Apex Speaker,Smart Home,Speaker,Northpeak,False,101.39,180.93,180.93,0.44,2022-03-03,True,0.56,Small,0.053
+SKU-10015,Kestrel Core Lighting,Smart Home,Lighting,Kestrel,False,154.66,242.9,242.9,0.363,2023-11-06,True,0.13,Small,0.069
+SKU-10016,Vireo Core Cable,Accessories,Cable,Vireo,False,49.39,62.96,62.96,0.216,2022-12-21,True,0.45,Small,0.027
+SKU-10017,Halcyon Core Plug,Smart Home,Plug,Halcyon,False,259.2,334.86,334.86,0.226,2022-01-16,True,0.88,Small,0.077
+SKU-10018,Northpeak Drift Headphones,Audio,Headphones,Northpeak,False,268.75,465.82,419.24,0.423,2023-06-14,False,1.07,Standard,0.072
+SKU-10019,Lumen Nova Earbuds,Audio,Earbuds,Lumen,False,160.75,203.94,203.94,0.212,2023-08-13,True,2.16,Standard,0.088
+SKU-10020,"Vireo Nova Pro 10""",Tablets,Pro,Vireo,False,997.72,1290.85,1290.85,0.227,2022-06-12,True,0.76,Small,0.08
+SKU-10021,Pinemark Apex Adapter,Accessories,Adapter,Pinemark,False,28.59,49.85,49.85,0.426,2022-01-04,True,0.27,Small,0.023
+SKU-10022,Cascade Basics Pulse Adapter,Accessories,Adapter,Cascade Basics,True,14.6,28.08,26.68,0.48,2022-07-24,True,0.22,Small,0.038
+SKU-10023,Halcyon Pulse Camera,Smart Home,Camera,Halcyon,False,18.36,30.23,30.23,0.393,2023-12-08,True,1.05,Standard,0.078
+SKU-10024,Pinemark Pulse Speaker,Smart Home,Speaker,Pinemark,False,238.01,326.55,326.55,0.271,2022-11-13,True,0.28,Small,0.066
+SKU-10025,Vireo Nova Headphones,Audio,Headphones,Vireo,False,319.08,404.46,404.46,0.211,2022-12-30,True,3.71,Standard,0.076
+SKU-10026,Lumen Drift Flagship 128GB,Phones,Flagship,Lumen,False,1151.03,1646.65,1481.98,0.301,2022-11-02,True,0.22,Small,0.117
+SKU-10027,"Vireo Lyra 2-in-1 14""",Laptops,2-in-1,Vireo,False,1720.79,2829.5,2829.5,0.392,2023-11-12,True,2.13,Standard,0.114
+SKU-10028,Cascade Basics Nova Speaker,Audio,Speaker,Cascade Basics,True,228.32,398.12,398.12,0.427,2022-07-15,True,1.14,Standard,0.083
+SKU-10029,Cascade Basics Nova Flagship 128GB,Phones,Flagship,Cascade Basics,True,198.26,350.95,350.95,0.435,2023-03-10,True,0.15,Small,0.08
+SKU-10030,Kestrel Nova Soundbar,Audio,Soundbar,Kestrel,False,18.2,32.27,32.27,0.436,2022-03-26,True,0.4,Small,0.078
+SKU-10031,Pinemark Onyx Speaker,Audio,Speaker,Pinemark,False,402.37,527.5,527.5,0.237,2023-01-03,True,0.89,Small,0.059
+SKU-10032,Pinemark Core Plug,Smart Home,Plug,Pinemark,False,112.43,165.11,165.11,0.319,2022-02-05,False,1.27,Standard,0.088
+SKU-10033,Lumen Onyx Budget 512GB,Phones,Budget,Lumen,False,1251.63,1667.72,1667.72,0.249,2023-03-26,True,0.2,Small,0.102
+SKU-10034,Cascade Basics Lyra Lighting,Smart Home,Lighting,Cascade Basics,True,94.71,198.55,198.55,0.523,2022-02-14,True,0.47,Small,0.067
+SKU-10035,"Pinemark Flux 4K LED 55""",TVs,4K LED,Pinemark,False,1121.0,1738.35,1738.35,0.355,2022-09-25,True,14.61,Oversized,0.075
+SKU-10036,Pinemark Nova Accessory,Gaming,Accessory,Pinemark,False,427.92,600.05,570.05,0.287,2023-01-26,True,2.44,Standard,0.079
+SKU-10037,Kestrel Flux Cable,Accessories,Cable,Kestrel,False,60.87,104.4,104.4,0.417,2023-05-22,True,0.13,Small,0.023
+SKU-10038,Vireo Onyx Stand,Accessories,Stand,Vireo,False,68.24,97.7,97.7,0.302,2023-12-01,True,0.73,Small,0.026
+SKU-10039,Vireo Flux Speaker,Smart Home,Speaker,Vireo,False,61.68,89.23,89.23,0.309,2023-03-26,True,0.75,Small,0.081
+SKU-10040,Halcyon Core Charger,Accessories,Charger,Halcyon,False,65.13,112.3,112.3,0.42,2023-03-14,True,0.12,Small,0.029
+SKU-10041,Northpeak Drift Case,Accessories,Case,Northpeak,False,80.45,108.62,108.62,0.259,2022-09-01,True,0.36,Small,0.024
+SKU-10042,Cascade Basics Nova Flagship 256GB,Phones,Flagship,Cascade Basics,True,396.16,725.65,725.65,0.454,2022-09-21,True,0.23,Small,0.093
+SKU-10043,Vireo Drift Extender,Networking,Extender,Vireo,False,276.51,477.06,453.21,0.42,2022-03-31,True,1.09,Standard,0.056
+SKU-10044,"Vireo Drift Ultrabook 15""",Laptops,Ultrabook,Vireo,False,780.74,1174.68,1174.68,0.335,2023-08-25,True,1.61,Standard,0.14
+SKU-10045,Cascade Basics Lyra Mid-range 128GB,Phones,Mid-range,Cascade Basics,True,322.6,568.58,568.58,0.433,2022-01-18,True,0.24,Small,0.075
+SKU-10046,Cascade Basics Aero Stand,Accessories,Stand,Cascade Basics,True,14.99,34.97,34.97,0.571,2022-01-11,True,0.22,Small,0.022
+SKU-10047,"Kestrel Lyra Budget 13""",Laptops,Budget,Kestrel,False,1734.35,2844.89,2702.65,0.39,2023-03-18,True,1.2,Standard,0.151
+SKU-10048,Northpeak Lyra Adapter,Accessories,Adapter,Northpeak,False,7.51,12.5,12.5,0.399,2023-09-03,True,0.48,Small,0.032
+SKU-10049,Kestrel Lyra Charger,Accessories,Charger,Kestrel,False,18.3,29.62,29.62,0.382,2023-06-20,True,0.88,Small,0.022
+SKU-10050,Vireo Core Speaker,Smart Home,Speaker,Vireo,False,172.7,291.09,291.09,0.407,2023-10-07,True,0.36,Small,0.068
+SKU-10051,Northpeak Lyra Case,Accessories,Case,Northpeak,False,19.07,24.25,24.25,0.214,2023-02-22,True,0.54,Small,0.033
+SKU-10052,Kestrel Nova Router,Networking,Router,Kestrel,False,147.01,219.9,219.9,0.331,2023-01-06,True,0.39,Small,0.044
+SKU-10053,Northpeak Nova Accessory,Gaming,Accessory,Northpeak,False,203.35,311.8,311.8,0.348,2023-04-08,True,2.69,Standard,0.065
+SKU-10054,Halcyon Pulse Controller,Gaming,Controller,Halcyon,False,288.9,417.82,417.82,0.309,2022-06-14,True,2.95,Standard,0.08
+SKU-10055,Halcyon Pulse Case,Accessories,Case,Halcyon,False,50.0,78.11,78.11,0.36,2022-11-11,True,0.68,Small,0.038
+SKU-10056,Halcyon Core Lighting,Smart Home,Lighting,Halcyon,False,108.53,142.92,142.92,0.241,2023-08-07,False,0.26,Small,0.084
+SKU-10057,Kestrel Edge Tower 32GB,Desktops,Tower,Kestrel,False,508.08,808.44,808.44,0.372,2022-11-15,True,5.13,Heavy,0.074
+SKU-10058,"Kestrel Apex Kids 11""",Tablets,Kids,Kestrel,False,424.73,537.9,457.22,0.21,2022-03-29,True,0.71,Small,0.1
+SKU-10059,Pinemark Apex Lens,Cameras,Lens,Pinemark,False,97.34,161.62,161.62,0.398,2023-06-03,True,0.51,Small,0.103
+SKU-10060,Kestrel Lyra Speaker,Smart Home,Speaker,Kestrel,False,232.03,396.37,396.37,0.415,2022-08-28,True,0.65,Small,0.067
+SKU-10061,Cascade Basics Pulse Console,Gaming,Console,Cascade Basics,True,92.68,159.41,159.41,0.419,2022-05-21,True,1.12,Standard,0.095
+SKU-10062,Vireo Aero Controller,Gaming,Controller,Vireo,False,152.8,200.82,200.82,0.239,2022-10-24,True,2.96,Standard,0.066
+SKU-10063,Lumen Flux Soundbar,Audio,Soundbar,Lumen,False,164.63,216.3,216.3,0.239,2023-05-18,True,3.12,Standard,0.087
+SKU-10064,Vireo Lyra Plug,Smart Home,Plug,Vireo,False,103.04,152.72,152.72,0.325,2022-01-16,True,0.25,Small,0.075
+SKU-10065,"Vireo Edge Pro 10""",Tablets,Pro,Vireo,False,101.48,129.79,129.79,0.218,2022-05-20,True,0.52,Small,0.063
+SKU-10066,Northpeak Flux Headphones,Audio,Headphones,Northpeak,False,415.61,589.45,589.45,0.295,2023-04-08,True,3.09,Standard,0.079
+SKU-10067,Lumen Nova Switch,Networking,Switch,Lumen,False,61.31,83.63,83.63,0.267,2023-09-24,True,0.97,Small,0.064
+SKU-10068,Pinemark Lyra Router,Networking,Router,Pinemark,False,243.5,382.49,382.49,0.363,2023-06-19,True,0.26,Small,0.05
+SKU-10069,Halcyon Edge Extender,Networking,Extender,Halcyon,False,167.23,223.44,223.44,0.252,2023-12-14,True,0.98,Small,0.063
+SKU-10070,Vireo Aero Case,Accessories,Case,Vireo,False,7.76,13.45,13.45,0.423,2022-09-29,True,0.66,Small,0.037
+SKU-10071,Lumen Edge Case,Accessories,Case,Lumen,False,24.18,34.27,32.56,0.294,2022-02-05,True,0.05,Small,0.033
+SKU-10072,"Pinemark Lyra Budget 16""",Laptops,Budget,Pinemark,False,1472.54,2416.32,2295.5,0.391,2023-07-23,True,1.69,Standard,0.127
+SKU-10073,Vireo Core Speaker,Audio,Speaker,Vireo,False,318.86,534.2,534.2,0.403,2022-11-24,True,1.5,Standard,0.091
+SKU-10074,Lumen Nova Soundbar,Audio,Soundbar,Lumen,False,68.93,99.36,84.46,0.306,2023-06-20,True,2.86,Standard,0.087
+SKU-10075,Pinemark Pulse Headset,Gaming,Headset,Pinemark,False,159.35,281.15,281.15,0.433,2022-08-09,True,0.18,Small,0.082
+SKU-10076,Cascade Basics Onyx Controller,Gaming,Controller,Cascade Basics,True,272.53,536.3,536.3,0.492,2022-10-09,True,4.05,Standard,0.112
+SKU-10077,Cascade Basics Drift Camera,Smart Home,Camera,Cascade Basics,True,130.83,246.53,246.53,0.469,2022-08-07,True,0.44,Small,0.086
+SKU-10078,Vireo Flux Earbuds,Audio,Earbuds,Vireo,False,357.57,479.35,479.35,0.254,2023-11-24,True,2.01,Standard,0.083
+SKU-10079,Kestrel Drift Adapter,Accessories,Adapter,Kestrel,False,19.85,28.74,28.74,0.309,2022-08-21,True,0.6,Small,0.029
+SKU-10080,"Cascade Basics Drift Budget 17""",Laptops,Budget,Cascade Basics,True,150.74,335.56,335.56,0.551,2022-03-17,True,1.87,Standard,0.107
+SKU-10081,Vireo Edge Gaming Rig 32GB,Desktops,Gaming Rig,Vireo,False,369.81,510.4,510.4,0.275,2022-12-24,True,7.72,Heavy,0.056
+SKU-10082,Pinemark Pulse Mid-range 512GB,Phones,Mid-range,Pinemark,False,620.54,922.9,922.9,0.328,2022-01-01,True,0.18,Small,0.12
+SKU-10083,Pinemark Flux Headphones,Audio,Headphones,Pinemark,False,215.03,298.32,298.32,0.279,2022-06-26,True,1.46,Standard,0.051
+SKU-10084,Northpeak Pulse Accessory,Gaming,Accessory,Northpeak,False,41.66,71.27,64.14,0.415,2022-04-20,True,0.14,Small,0.065
+SKU-10085,Northpeak Core Budget 256GB,Phones,Budget,Northpeak,False,711.05,1019.36,968.39,0.302,2022-07-24,True,0.14,Small,0.08
+SKU-10086,Cascade Basics Lyra Adapter,Accessories,Adapter,Cascade Basics,True,21.3,36.48,36.48,0.416,2023-10-25,True,0.56,Small,0.036
+SKU-10087,Halcyon Drift Speaker,Audio,Speaker,Halcyon,False,222.56,368.43,368.43,0.396,2023-08-24,False,1.41,Standard,0.064
+SKU-10088,"Northpeak Apex Ultrabook 13""",Laptops,Ultrabook,Northpeak,False,1863.57,2536.7,2536.7,0.265,2023-06-13,True,2.61,Standard,0.093
+SKU-10089,Northpeak Pulse Budget 128GB,Phones,Budget,Northpeak,False,735.32,921.52,921.52,0.202,2023-02-08,True,0.14,Small,0.078
+SKU-10090,Vireo Lyra Adapter,Accessories,Adapter,Vireo,False,48.01,68.05,68.05,0.294,2022-11-22,True,0.09,Small,0.033
+SKU-10091,Kestrel Aero Charger,Accessories,Charger,Kestrel,False,45.42,74.72,70.98,0.392,2023-03-28,True,0.27,Small,0.028
+SKU-10092,Halcyon Drift Fitness Band,Wearables,Fitness Band,Halcyon,False,492.49,618.82,618.82,0.204,2023-02-18,False,0.08,Small,0.118
+SKU-10093,Pinemark Onyx Thermostat,Smart Home,Thermostat,Pinemark,False,232.66,358.62,358.62,0.351,2022-03-10,True,0.31,Small,0.056
+SKU-10094,"Cascade Basics Onyx Kids 13""",Tablets,Kids,Cascade Basics,True,175.15,354.58,354.58,0.506,2023-04-16,True,0.75,Small,0.103
+SKU-10095,Halcyon Drift Case,Accessories,Case,Halcyon,False,41.39,71.83,64.65,0.424,2023-09-20,True,0.79,Small,0.025
+SKU-10096,Halcyon Aero Stand,Accessories,Stand,Halcyon,False,75.81,117.67,117.67,0.356,2023-04-04,True,0.8,Small,0.032
+SKU-10097,Pinemark Nova Camera,Smart Home,Camera,Pinemark,False,196.49,250.67,250.67,0.216,2022-09-04,True,0.38,Small,0.055
+SKU-10098,"Pinemark Aero Pro 11""",Tablets,Pro,Pinemark,False,761.11,1245.88,1245.88,0.389,2022-09-05,True,0.7,Small,0.078
+SKU-10099,"Kestrel Flux Kids 10""",Tablets,Kids,Kestrel,False,407.1,662.1,662.1,0.385,2022-03-07,True,0.59,Small,0.09
+SKU-10100,Kestrel Pulse Budget 128GB,Phones,Budget,Kestrel,False,1021.77,1328.39,1195.55,0.231,2022-08-03,True,0.24,Small,0.127
+SKU-10101,Vireo Edge Mid-range 512GB,Phones,Mid-range,Vireo,False,570.56,993.58,943.9,0.426,2022-10-21,True,0.2,Small,0.085
+SKU-10102,"Vireo Edge Pro 13""",Tablets,Pro,Vireo,False,612.88,982.16,982.16,0.376,2023-03-02,True,0.56,Small,0.105
+SKU-10103,"Cascade Basics Pulse Pro 10""",Tablets,Pro,Cascade Basics,True,493.74,1175.35,1175.35,0.58,2023-03-27,True,0.74,Small,0.087
+SKU-10104,"Cascade Basics Pulse 4K LED 75""",TVs,4K LED,Cascade Basics,True,2054.72,4391.69,4391.69,0.532,2023-09-13,True,13.2,Oversized,0.048
+SKU-10105,Cascade Basics Aero Router,Networking,Router,Cascade Basics,True,136.14,273.3,273.3,0.502,2023-07-21,True,0.95,Small,0.039
+SKU-10106,Cascade Basics Nova Flagship 128GB,Phones,Flagship,Cascade Basics,True,703.62,1626.06,1626.06,0.567,2022-04-30,False,0.16,Small,0.077
+SKU-10107,Vireo Edge Case,Accessories,Case,Vireo,False,50.71,76.11,76.11,0.334,2023-04-27,True,0.5,Small,0.036
+SKU-10108,Pinemark Nova Cable,Accessories,Cable,Pinemark,False,19.6,25.12,25.12,0.22,2023-11-11,True,0.09,Small,0.032
+SKU-10109,Northpeak Drift Case,Accessories,Case,Northpeak,False,24.79,31.74,31.74,0.219,2023-07-04,True,0.59,Small,0.026
+SKU-10110,Pinemark Drift Tower 32GB,Desktops,Tower,Pinemark,False,533.65,753.67,753.67,0.292,2022-04-05,True,13.3,Heavy,0.091
+SKU-10111,Northpeak Apex Controller,Gaming,Controller,Northpeak,False,277.24,352.04,352.04,0.212,2023-03-14,True,0.88,Small,0.109
+SKU-10112,"Halcyon Lyra Budget 14""",Laptops,Budget,Halcyon,False,2133.52,2673.74,2673.74,0.202,2022-05-06,True,2.22,Standard,0.11
+SKU-10113,Pinemark Nova Case,Accessories,Case,Pinemark,False,51.77,70.92,70.92,0.27,2022-08-29,True,0.82,Small,0.027
+SKU-10114,Halcyon Nova Controller,Gaming,Controller,Halcyon,False,70.49,123.03,123.03,0.427,2023-06-19,False,2.98,Standard,0.081
+SKU-10115,"Kestrel Onyx Pro 13""",Tablets,Pro,Kestrel,False,283.93,396.02,396.02,0.283,2023-09-20,True,0.51,Small,0.078
+SKU-10116,Cascade Basics Core Smart Ring,Wearables,Smart Ring,Cascade Basics,True,246.67,456.56,410.9,0.46,2023-06-28,True,0.08,Small,0.089
+SKU-10117,Halcyon Edge Mesh,Networking,Mesh,Halcyon,False,195.73,352.15,352.15,0.444,2023-12-03,True,1.43,Standard,0.063
+SKU-10118,Pinemark Edge Stand,Accessories,Stand,Pinemark,False,46.39,68.99,68.99,0.328,2023-08-13,True,0.33,Small,0.038
+SKU-10119,Cascade Basics Onyx Case,Accessories,Case,Cascade Basics,True,50.56,91.44,91.44,0.447,2023-04-02,True,0.46,Small,0.033
+SKU-10120,Pinemark Core Earbuds,Audio,Earbuds,Pinemark,False,234.81,359.86,359.86,0.347,2022-07-31,True,3.3,Standard,0.049
+SKU-10121,Halcyon Drift Speaker,Audio,Speaker,Halcyon,False,296.22,506.72,506.72,0.415,2022-03-26,True,0.64,Small,0.057
+SKU-10122,"Vireo Nova Pro 10""",Tablets,Pro,Vireo,False,969.74,1219.48,1219.48,0.205,2023-03-28,True,0.46,Small,0.078
+SKU-10123,Northpeak Nova Case,Accessories,Case,Northpeak,False,60.15,101.24,101.24,0.406,2022-03-23,True,0.52,Small,0.033
+SKU-10124,Cascade Basics Onyx Smartwatch 41mm,Wearables,Smartwatch,Cascade Basics,True,183.26,437.34,437.34,0.581,2022-08-22,True,0.12,Small,0.095
+SKU-10125,Pinemark Drift All-in-One,Desktops,All-in-One,Pinemark,False,1847.15,2436.78,2314.94,0.242,2022-09-15,True,8.75,Heavy,0.092
+SKU-10126,Halcyon Core Cable,Accessories,Cable,Halcyon,False,18.57,24.12,24.12,0.23,2023-10-14,True,0.18,Small,0.022
+SKU-10127,Vireo Nova Tower 16GB,Desktops,Tower,Vireo,False,1342.44,2402.75,2402.75,0.441,2022-09-07,True,12.41,Heavy,0.097
+SKU-10128,Halcyon Flux Cable,Accessories,Cable,Halcyon,False,57.18,99.75,99.75,0.427,2023-03-05,True,0.68,Small,0.03
+SKU-10129,Lumen Nova Case,Accessories,Case,Lumen,False,29.76,49.21,49.21,0.395,2023-12-03,True,0.69,Small,0.024
+SKU-10130,"Vireo Aero Standard 13""",Tablets,Standard,Vireo,False,752.86,1288.47,1288.47,0.416,2022-10-18,True,0.58,Small,0.11
+SKU-10131,Cascade Basics Nova Extender,Networking,Extender,Cascade Basics,True,71.07,133.78,133.78,0.469,2022-05-21,True,1.23,Standard,0.052
+SKU-10132,Northpeak Nova Case,Accessories,Case,Northpeak,False,9.48,13.54,13.54,0.3,2022-01-20,True,0.27,Small,0.035
+SKU-10133,Halcyon Pulse Case,Accessories,Case,Halcyon,False,26.08,38.32,38.32,0.319,2022-10-08,True,0.53,Small,0.022
+SKU-10134,"Kestrel Lyra Ultrabook 15""",Laptops,Ultrabook,Kestrel,False,1383.3,2332.76,2216.12,0.407,2023-08-29,True,1.9,Standard,0.088
+SKU-10135,"Halcyon Nova OLED 65""",TVs,OLED,Halcyon,False,2079.57,3445.71,3445.71,0.396,2022-05-23,True,12.0,Oversized,0.048
+SKU-10136,Cascade Basics Edge Mid-range 128GB,Phones,Mid-range,Cascade Basics,True,283.63,690.0,690.0,0.589,2023-11-09,True,0.17,Small,0.123
+SKU-10137,Northpeak Aero Stand,Accessories,Stand,Northpeak,False,11.59,20.03,20.03,0.421,2022-05-26,True,0.15,Small,0.036
+SKU-10138,Kestrel Onyx Plug,Smart Home,Plug,Kestrel,False,27.03,41.57,41.57,0.35,2022-03-04,True,1.43,Standard,0.056
+SKU-10139,Pinemark Nova Switch,Networking,Switch,Pinemark,False,207.72,262.03,262.03,0.207,2023-08-03,True,0.76,Small,0.045
+SKU-10140,"Cascade Basics Drift Pro 8""",Tablets,Pro,Cascade Basics,True,380.78,807.2,807.2,0.528,2023-09-24,True,0.57,Small,0.113
+SKU-10141,Pinemark Drift Stand,Accessories,Stand,Pinemark,False,40.49,58.52,58.52,0.308,2022-08-29,True,0.61,Small,0.027
+SKU-10142,Pinemark Flux Headphones,Audio,Headphones,Pinemark,False,85.0,116.32,116.32,0.269,2022-03-10,True,1.02,Standard,0.081
+SKU-10143,Lumen Onyx Soundbar,Audio,Soundbar,Lumen,False,262.86,366.49,366.49,0.283,2023-11-08,True,3.79,Standard,0.088
+SKU-10144,Vireo Apex Plug,Smart Home,Plug,Vireo,False,193.5,280.16,280.16,0.309,2022-01-29,True,1.14,Standard,0.07
+SKU-10145,Vireo Flux Controller,Gaming,Controller,Vireo,False,198.79,258.27,258.27,0.23,2023-07-28,True,2.59,Standard,0.072
+SKU-10146,Halcyon Core Cable,Accessories,Cable,Halcyon,False,91.85,116.13,110.32,0.209,2023-01-27,True,0.21,Small,0.037
+SKU-10147,Vireo Edge Headphones,Audio,Headphones,Vireo,False,206.93,299.42,254.51,0.309,2023-08-15,True,2.51,Standard,0.065
+SKU-10148,Vireo Lyra Console,Gaming,Console,Vireo,False,368.24,592.89,592.89,0.379,2023-08-03,False,3.95,Standard,0.091
+SKU-10149,Northpeak Flux Controller,Gaming,Controller,Northpeak,False,309.92,481.1,481.1,0.356,2022-04-30,True,0.28,Small,0.091
+SKU-10150,"Vireo Pulse OLED 65""",TVs,OLED,Vireo,False,1044.52,1819.08,1637.17,0.426,2022-06-13,True,17.74,Oversized,0.045

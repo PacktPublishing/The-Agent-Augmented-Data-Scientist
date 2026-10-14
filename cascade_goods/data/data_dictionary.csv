@@ -1,0 +1,77 @@
+table,column,type,description
+customers,customer_id,string,"Primary key, C000001 format"
+customers,first_name,string,Given name
+customers,last_name,string,Family name
+customers,email_domain,string,Email domain only; internal domains flag test accounts
+customers,signup_date,date,Account creation date; always on or before the customer's first order
+customers,acquisition_channel,enum,How the customer was acquired
+customers,region,enum,Customer home region
+customers,state,string,"Customer home state, recorded as a 2-letter code"
+customers,city,string,Customer home city
+customers,zip_code,string,"5-digit, state-consistent prefix"
+customers,age_band,enum,Age bucket; 'Unknown' indicates an unspecified age band
+customers,gender,enum,Customer gender category
+customers,customer_segment,enum,CRM segment; assignment criteria are undocumented
+customers,loyalty_member,bool,Loyalty program membership
+customers,marketing_opt_in,bool,Marketing consent
+customers,preferred_device,enum,Self-reported device preference
+customers,account_status,enum,"Status at the dataset snapshot date (see data README), based on the latest Completed or Pending order: Active within 90 days; Dormant at 91-365 days; Closed beyond 365 days. With no such order, Active if signup was within 180 days, otherwise Dormant. Closed denotes inactivity, not confirmed account closure."
+customers,is_test_account,bool,Indicates whether the account is flagged as internal or test
+products,sku,string,"Primary key, SKU-10001 format"
+products,product_name,string,Brand + series + subcategory + category-appropriate size
+products,category,enum,12 product categories
+products,subcategory,string,Category-specific subtype
+products,brand,enum,Invented brands; Cascade Basics is private label
+products,is_private_label,bool,True for Cascade Basics
+products,unit_cost,decimal,Cost of goods
+products,list_price,decimal,Reference list price
+products,current_price,decimal,Price at the dataset snapshot date (see data README); may reflect markdown. Historical transaction prices are recorded on order lines.
+products,margin_pct,decimal,Catalog gross margin off list price: (list_price - unit_cost)/list_price
+products,launch_date,date,First available date (2022-2023; in catalog for the whole order window)
+products,is_active,bool,Availability at the dataset snapshot date (see data README); discontinued products retain historical sales.
+products,weight_kg,decimal,Category-appropriate shipping weight
+products,shipping_class,enum,"Small/Standard/Heavy/Oversized, derived from weight (TVs Oversized)"
+products,return_rate,decimal,Estimated probability that an order line containing this product will have a return. This estimate is distinct from the observed return rate calculated from transaction records.
+orders,order_id,string,"Primary key, ORD-0000001 format"
+orders,customer_id,string,FK to customers
+orders,order_timestamp,datetime,"Order placement time, interpreted as UTC; stored without a timezone offset. On or after signup_date."
+orders,order_date,date,UTC date component of order_timestamp.
+orders,channel,enum,Web/Mobile App/In-Store
+orders,ship_to_region,enum,"Order destination region, which may differ from the customer home region"
+orders,ship_to_state,string,"Destination state, consistent with ship_to_region"
+orders,num_items,int,"Recorded number of order lines, not units"
+orders,subtotal,decimal,Sum of line_gross before order discount/ship/tax
+orders,item_discount_total,decimal,Sum of line-level discounts (allocated)
+orders,order_discount,decimal,"Order-level promo, NOT allocated to lines"
+orders,shipping_fee,decimal,"Recorded shipping charge in USD. Zero for Pending and Cancelled orders."
+orders,tax,decimal,Tax on net merchandise; 0 for non-Completed
+orders,revenue,decimal,"Merchandise value after discounts: subtotal - item_discount_total - order_discount. Populated for every order status, including Pending and Cancelled; does not filter for completed purchases."
+orders,adjusted_revenue,decimal,revenue - refund_amount for Completed; 0 otherwise
+orders,gross_collected,decimal,"Gross cash at purchase: revenue + shipping_fee + tax, pre-refund; 0 if not Completed"
+orders,refund_amount,decimal,Refund amount recorded at the order level
+orders,return_flag,bool,True when refund_amount > 0
+orders,order_status,enum,"Completed / Cancelled / Pending (returns are an attribute, not a status)"
+orders,payment_method,enum,Tender type
+orders,promo_code,string,"Applied promo, blank if none"
+orders,free_shipping_applied,bool,True when free shipping was applied to a Completed order. False for Pending and Cancelled orders even though their shipping_fee is zero.
+orders,shipping_speed,enum,Standard/Expedited/Two-Day; affects late rate
+orders,delivery_late_flag,bool,Delivered later than promised
+orders,device_type,enum,Desktop/Mobile/Tablet/In-Store POS
+orders,is_first_order,bool,"Customer's earliest recorded order, regardless of status; not necessarily their first completed purchase."
+order_items,order_item_id,string,"Primary key, OI-00000001 format"
+order_items,order_id,string,FK to orders
+order_items,sku,string,FK to products
+order_items,customer_id,string,Denormalized FK to customers
+order_items,quantity,int,Units in the line
+order_items,unit_list_price,decimal,Price snapshot; may differ from products.list_price
+order_items,unit_discount,decimal,Per-unit line discount
+order_items,line_gross,decimal,quantity * unit_list_price
+order_items,line_revenue,decimal,line_gross - quantity * unit_discount; before order-level discounts and refunds.
+order_items,unit_cost,decimal,Cost snapshot
+order_items,line_margin,decimal,"line_revenue - quantity * unit_cost; before order-level discounts, refunds, and other costs."
+order_items,category,string,Denormalized product category
+order_items,is_gift,bool,Marked as gift
+order_items,item_status,enum,Fulfilled / Returned / Cancelled
+order_items,return_quantity,int,Units returned
+order_items,item_refund_amount,decimal,Line refund value
+order_items,return_reason,enum,"One of: Defective, Wrong Item, Not As Described, Changed Mind, Better Price Found, Arrived Late; blank otherwise"
