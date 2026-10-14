@@ -14,3 +14,9 @@ The [Cascade Goods folder](cascade_goods/) contains business and team context, a
 Use these materials as examples when developing your own team's foundation. Review the definitions, assumptions, and standards for your setting.
 
 Chapters 3–12 currently contain placeholders. Materials will be added as they are ready.
+
+## License
+
+Licensed under the [MIT License](LICENSE).
+
+Copyright (c) 2026 Packt.
