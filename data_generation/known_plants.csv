@@ -1,0 +1,16 @@
+plant_id,table,columns,description,detection_hint,chapter
+P1,products / order_items,list_price vs unit_list_price,Line items store a price snapshot that can differ from the product's current price.,Join order_items.sku to products and compare unit_list_price with list_price.,Ch 4
+C1,customers,"first_name, last_name, city, zip_code, email_domain","2 near-duplicate customers (nickname, same last name/city/zip/email).",Fuzzy-match on last_name + zip_code + email_domain; first names differ by nickname.,Ch 4
+C7,customers,"city, state, zip_code",~1.5% of customers have a city that does not match their state/zip.,Validate city against state with a zip-to-state lookup; a small share will fail.,Ch 4
+C2,customers,state,A small share of state codes are lowercase ('ca' not 'CA').,Check distinct state values for case inconsistency.,Ch 4
+C3,customers,age_band,Some age_band values are the sentinel string 'Unknown'.,Treat 'Unknown' as missing; it will not behave like a numeric or ordered band.,Ch 4
+C4,customers,"is_test_account, email_domain, first_name",~1.5% are internal/test accounts but the flag catches only ~60%.,"Combine the flag with internal email domains and first_name in (Test, QA).",Ch 4
+C5,customers,customer_segment,customer_segment loosely tracks behaviour but has no stated definition.,Ask what 'Loyal' or 'VIP' means before using it in a metric.,Ch 3
+C6,customers,loyalty_member,"Loyalty members are generated to be more active, so they churn less. Association, not cause.",Comparing churn by loyalty invites a causal read the design does not support.,Ch 5
+O1,orders / order_items,"revenue, order_discount, line_revenue","order_discount is an order-level promo not allocated to lines, so SUM(line_revenue) != orders.revenue.",revenue equals SUM(line_revenue) - order_discount. Naive line-summing overstates revenue.,Ch 4
+O2,orders,"revenue, adjusted_revenue, gross_collected","Three revenue definitions: merchandise (revenue), net of refunds (adjusted_revenue), gross cash incl shipping+tax (gross_collected).",Agree which one the metric means before reporting.,Ch 3
+O3,orders,num_items,~1% of orders have num_items not equal to their order_items line count (never 0).,Compare num_items to COUNT(order_items) per order_id.,Ch 4
+O4,orders,"shipping_fee, free_shipping_applied, subtotal",Free-shipping threshold dropped from 50 to 35 on 2025-06-15. Bulky items can still pay above it.,RDD on subtotal at the cutoff; DiD on the newly-treated 35-50 band before/after.,Ch 6
+O5,orders,"ship_to_region, order_date","Mountain received free 2-day shipping on 2025-08-01, lifting orders ~18%.","Synthetic control: treat Mountain, donor pool = other 9 regions, weekly series.",Ch 6
+O6,orders,ship_to_region vs customers.region,~8% of orders ship to a region different from the customer's home region.,Do not assume ship_to_region equals the customer's region in joins.,Ch 4
+O7,orders / order_items,refund_amount vs item_refund_amount,~15% of refunded orders have an order-level refund that differs from the line sum.,Most refunds reconcile exactly; a minority carry order-level adjustments.,Ch 4
