@@ -4,8 +4,8 @@ Companion materials for *The Agent-Augmented Data Scientist*, published by Packt
 
 ## Getting started
 
-- **[Chapter 1: The Agent-Augmented Analytics Playbook](chapters/chapter_01/README.md)** — Use the [Brainstorm an Agent-Augmented Workflow skill](skills/brainstorm-agent-augmented-workflow/SKILL.md) to explore an opportunity using your own organization's work and context.
-- **[Chapter 2: Setting Up the Analytics Playbook Stack](chapters/chapter_02/README.md)** — Use the authoring guides and templates to build your team's business context, team context, analytical standards, metric registry, and agent registry.
+- [Chapter 1](chapters/chapter_01/README.md) — Find an opportunity for agent augmentation.
+- [Chapter 2](chapters/chapter_02/README.md) — Build your team's shared analytical foundation.
 
 ## Cascade Goods worked example
 
