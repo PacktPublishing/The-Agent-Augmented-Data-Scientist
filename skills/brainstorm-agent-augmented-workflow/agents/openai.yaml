@@ -1,0 +1,4 @@
+interface:
+  display_name: "Brainstorm Agent-Augmented Workflow"
+  short_description: "Find strong agent-workflow opportunities"
+  default_prompt: "Use $brainstorm-agent-augmented-workflow to examine one analytical workflow and produce a grounded opportunity brief."
