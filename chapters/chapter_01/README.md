@@ -12,7 +12,7 @@ Choose a workflow you know. Bring a recent report, notebook, process description
 
 Use the [Brainstorm an Agent-Augmented Workflow](../../skills/brainstorm-agent-augmented-workflow/SKILL.md) skill to explore an opportunity using your own organization's work and context.
 
-For definitions of skills, agents, and playbooks, see the [common-terms guide](../../docs/common-terms.md).
+For definitions of skills, agents, and playbooks, see [Terms used in this book](../../docs/common-terms.md).
 
 ## Load the companion skill
 

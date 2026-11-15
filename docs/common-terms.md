@@ -1,6 +1,6 @@
-# Common terms
+# Terms used in this book
 
-This guide explains how the book uses common terms. Product terminology and setup mechanisms vary; use these definitions alongside the chapter instructions and your coding agent's documentation.
+This glossary explains how the book uses each term.
 
 ## Model
 
@@ -18,7 +18,7 @@ In this book, an agent combines a model with a harness to carry out a task. It c
 
 ## Analytical playbook
 
-A versioned set of instructions and rules that guides a general-purpose agent through a recurring class of analytical work. It brings together context, workflow steps, constraints, checks, expected outputs, and points where the data scientist provides feedback or approval.
+In this book, an analytical playbook is a versioned set of instructions and rules that guides an agent through a recurring analytical workflow. It specifies which context to use, what to check, what outputs to produce, and when the data scientist provides feedback or approval.
 
 The playbooks developed in the book use two main files:
 
@@ -31,29 +31,23 @@ The existing harness executes the agent's actions. Written instructions alone do
 
 A reusable package of instructions and optional supporting resources for a particular task. In the Agent Skills format, a skill is a folder containing a `SKILL.md` file with metadata and instructions. It can also contain scripts, references, and templates. See the [Agent Skills overview](https://agentskills.io/home).
 
-The [Chapter 1 brainstorming skill](../skills/brainstorm-agent-augmented-workflow/SKILL.md), for example, helps a reader examine a workflow and produce an opportunity brief. A playbook can call on skills for parts of its workflow.
-
-Native skill discovery and invocation depend on the coding agent. Readers can also supply the instructions directly, as described in the [Chapter 1 setup](../chapters/chapter_01/README.md#load-the-companion-skill). Supplying instructions directly does not install a native skill.
+For example, a playbook might use an interview skill to clarify a stakeholder’s request before drafting an analysis plan.
 
 ## AGENTS.md
 
 A Markdown file for project instructions used by coding agents that support it. It can describe the repository, working conventions, and commands or checks the agent should use. See the [AGENTS.md guide](https://agents.md/).
 
-For a book exercise, such a file could point the agent to shared context, analytical standards, and the relevant playbook. It does not register specialist subagents or install skills. File discovery and instruction precedence depend on the coding agent.
+The file can point the agent to shared context, analytical standards, and the relevant playbook. It does not register specialist subagents or install skills. File discovery and instruction precedence depend on the coding agent.
 
 ## Specialist or custom subagent
 
-An agent delegated a focused task by the primary agent. A custom subagent has role instructions configured for that purpose, such as reviewing an analytical plan against the question and available evidence.
-
-The [analytical reviewer](../cascade_goods/execution/agents/analytical_reviewer.md) is an example role definition. The calling agent supplies the assignment, relevant context, and review criteria, then incorporates the returned findings.
-
-A role file does not create or register a subagent automatically. Follow the harness's delegation or configuration mechanism. If the primary agent applies the role instructions itself, that is a review within the same session. See the [agent directory](../cascade_goods/execution/agents/README.md) for usage guidance. The data scientist retains the decisions and approvals specified by the playbook.
+A subagent is an agent to which the primary agent delegates a focused task. A custom subagent has instructions for a particular role. For example, the primary agent might send a draft analysis plan to a reviewer, along with the original question and review criteria. The reviewer returns its findings. If the primary agent reads the reviewer instructions and checks the plan itself, that review happens in the same session.
 
 ## Evaluation (eval)
 
 A test of whether an agent using a playbook produces an expected result or meets specified criteria for a given request and input.
 
-For example, give a weekly reporting playbook a fixed sample dataset with a known weekly active user count. Check whether each run reports the expected count. Additional cases can cover different inputs, and repeated runs can help assess consistency. The numerical result should match when the definition, data, and deterministic calculation code are fixed; the narrative may vary.
+For example, an eval for a weekly reporting playbook compares the reported weekly active user count with the known count for a fixed sample dataset. Repeated runs can reveal whether the count stays consistent even when the narrative varies.
 
 An eval can also assess behavior, such as whether the agent requests a required approval. Passing a test provides evidence about the tested cases; it does not enforce that behavior in future runs.
 

@@ -9,9 +9,9 @@ Companion materials for *The Agent-Augmented Data Scientist*, published by Packt
 
 Materials for Chapters 3–12 will be added as they are ready.
 
-## Common terms
+## Terms used in this book
 
-See the [common-terms guide](docs/common-terms.md) for models, agents, harnesses, playbooks, skills, `AGENTS.md`, specialist subagents, evals, and MCP.
+See [Terms used in this book](docs/common-terms.md) for models, agents, harnesses, playbooks, skills, `AGENTS.md`, specialist subagents, evals, and MCP.
 
 ## Cascade Goods
 

@@ -10,7 +10,7 @@ Start by reflecting on your work: the team you belong to, the part of the busine
 
 When you reach the metric registry, bring existing metric definitions, data documentation, and trusted queries where available. Access to the relevant data will let you check the SQL; keep any missing inputs explicit.
 
-For definitions of project instructions, skills, specialist subagents, and other terms used in the book, see the [common-terms guide](../../docs/common-terms.md).
+For definitions of project instructions, skills, specialist subagents, and other terms used in the book, see [Terms used in this book](../../docs/common-terms.md).
 
 ## Materials
 
