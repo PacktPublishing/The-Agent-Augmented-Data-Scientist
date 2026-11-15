@@ -26,6 +26,7 @@ When you reach the metric registry, bring existing metric definitions, data docu
 |---|---|
 | [DS standards](templates/DS_STANDARDS.md) | Establish shared analytical practices, adjusting them to your team. |
 | [Agent registry](templates/agent_registry.md) | List specialist roles that fit your team and link to their definitions. |
+| [Sample AGENTS.md](examples/AGENTS.md) | Show an agent where to find shared resources and when to read them. See the placement and adaptation steps below. |
 
 Replace placeholder metadata and paths in your copies, and review the guidance for your setting.
 
@@ -77,7 +78,40 @@ Use the [agent-registry starter](templates/agent_registry.md) to list specialist
 
 Start with the [analytical reviewer](../../cascade_goods/execution/agents/analytical_reviewer.md) provided in this book, or choose another specialist that fits your work. Using the reviewer is a complete starting option; you do not need to create a new agent. Update its metadata and context links for your team, then add it to your registry. Reuse or adapt further agents from the book and add your own as needed while developing playbooks.
 
-The [CG agent directory](../../cascade_goods/execution/agents/README.md) illustrates how to use role definitions. Follow your tool's delegation or configuration mechanism when running a role as a separate subagent.
+The [CG agent directory](../../cascade_goods/execution/agents/README.md) illustrates how to use role definitions.
+
+#### Set up the role as a subagent
+
+After adapting the role definition, configure it as a subagent in your chosen coding agent. Adding it to the registry does not register it with the tool.
+
+You can ask your coding agent to help. Supply the path to your adapted role file, or use `cascade_goods/execution/agents/analytical_reviewer.md` from the repository root for the CG example:
+
+> Set up an Analytical Reviewer subagent for this project using the supplied analytical_reviewer.md file. Follow your tool’s current subagent setup documentation. Preserve the role’s responsibilities and boundaries, and check that its referenced files are accessible. Explain how to invoke it and confirm that it runs as a separate subagent.
+
+Review the resulting configuration, including its instructions and tool access. Then try it on an analysis you understand. Give the main agent the original question, supporting artifacts, and relevant context, and ask it to delegate the review. Confirm that a separate subagent runs, then inspect whether its findings are supported by the supplied evidence.
+
+For tool-specific guidance, see:
+
+- [Claude Code: Create custom subagents](https://code.claude.com/docs/en/sub-agents)
+- [Codex: Subagents](https://learn.chatgpt.com/docs/agent-configuration/subagents)
+
+### 5. Make the shared resources discoverable
+
+Having files in a working folder does not, by itself, mean that the agent will read them or know how to use them. Use the agent's project instruction file, such as `AGENTS.md`, to explain where to find the shared resources and when to read them. Individual playbooks will add instructions for using those resources at each step.
+
+The [sample AGENTS.md](examples/AGENTS.md) shows this using the existing Cascade Goods files:
+
+1. For the CG example, copy the sample to `AGENTS.md` at the root of your local companion repository. Its paths are relative to that root. If you already have a project instruction file, merge the relevant guidance into it instead of replacing it.
+2. For your own project, replace the CG paths and descriptions with your reviewed resources. Identify missing or draft resources explicitly. If your tool uses a different project instruction file, such as `CLAUDE.md`, add the same guidance there using the tool's supported setup.
+3. Start a session in the project and confirm that your tool loads the project instruction file. If it does not, ask the agent to read the file explicitly and check the tool's documentation for persistent setup.
+
+Provide a familiar analytical request and ask the agent to explain which resources it would use before starting:
+
+> Read the project instructions and the shared resources relevant to this request. List the files and metric entries you consulted, explain which definitions and standards affect your approach, and identify missing or conflicting information. Do not begin the analysis yet.
+
+Check the response against the referenced files. Naming a file alone does not show that the agent applied its guidance correctly. Correct the paths or guidance where needed, and check the subsequent work against the applicable definitions and standards.
+
+See the [AGENTS.md format guide](https://agents.md/) and [Claude Code project instruction documentation](https://code.claude.com/docs/en/memory) for placement and loading details. We will build on this setup when developing the playbooks and sample use cases in later chapters.
 
 ## What you should have
 
@@ -85,6 +119,7 @@ The [CG agent directory](../../cascade_goods/execution/agents/README.md) illustr
 - Analytical standards adapted to your team's work.
 - At least two foundational metric entries with accompanying SQL and recorded checks, or clearly identified inputs needed to complete them.
 - A starter agent registry with links to specialist definitions chosen for your work.
+- A configured specialist subagent tried on familiar work, and project instructions pointing to the relevant shared resources.
 
 Keep these files available for the playbooks you develop in later chapters. In Chapter 3, use the [playbook template guide](../chapter_03/templates/playbook_template_guide.md) and the [`instructions.md`](../chapter_03/templates/instructions.md) and [`rules.md`](../chapter_03/templates/rules.md) templates to define a playbook's workflow, constraints, checks, and human review requirements.
 
