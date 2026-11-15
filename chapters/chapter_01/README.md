@@ -12,9 +12,21 @@ Choose a workflow you know. Bring a recent report, notebook, process description
 
 Use the [Brainstorm an Agent-Augmented Workflow](../../skills/brainstorm-agent-augmented-workflow/SKILL.md) skill to explore an opportunity using your own organization's work and context.
 
+For definitions of skills, agents, and playbooks, see the [common-terms guide](../../docs/common-terms.md).
+
+## Load the companion skill
+
+Ask your coding agent to read `skills/brainstorm-agent-augmented-workflow/SKILL.md` and follow its instructions for this exercise. You can also attach the file or paste its full contents into the conversation. Keep any referenced supporting materials available.
+
+If you prefer to load it as a native skill, you can ask your agent to help set it up using the mechanism supported by your coding environment. Cloning the repository alone does not make the skill automatically available.
+
+Suggested setup prompt:
+
+> Help me set up the brainstorm-agent-augmented-workflow skill in this repository for use with my coding agent. Read its instructions and supporting files, explain any configuration needed, and tell me how to invoke it. If native skills are unavailable, use the instructions directly for this exercise.
+
 ## Work through the chapter
 
-1. Attach or paste the skill's instructions into your agent conversation, or use your tool's supported skill-loading mechanism. Cloning this repository alone does not make the skill automatically available to your tool.
+1. Load the companion skill using one of the options above.
 2. Introduce your workflow and supply relevant materials. Use the prompt below to start the discussion.
 3. Review the emerging opportunity, correct assumptions, and decide what to carry forward.
 

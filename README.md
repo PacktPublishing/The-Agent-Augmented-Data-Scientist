@@ -9,6 +9,10 @@ Companion materials for *The Agent-Augmented Data Scientist*, published by Packt
 
 Materials for Chapters 3–12 will be added as they are ready.
 
+## Common terms
+
+See the [common-terms guide](docs/common-terms.md) for models, agents, harnesses, playbooks, skills, `AGENTS.md`, specialist subagents, evals, and MCP.
+
 ## Cascade Goods
 
 [Cascade Goods](cascade_goods/) is the fictional retail company introduced in Chapter 2 and used throughout the book. This folder contains its shared context, datasets, and analytical resources for the chapter examples and playbooks.
