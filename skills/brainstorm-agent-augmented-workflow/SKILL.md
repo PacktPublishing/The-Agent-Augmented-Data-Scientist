@@ -11,20 +11,10 @@ Stop at an opportunity brief. Do not design or build the workflow.
 
 ## Working principles
 
-- Treat the session as a natural collaborative dialogue, not an intake interview or an audit.
-- Ask at most one independently answerable question or information request per reply, then wait for the user's answer. Choose the unresolved item that most affects the next decision. Keep other unknowns for later turns unless the user explicitly requests a batch.
-- Before sending, count the answers requested, including requests embedded in prose or bullets. A compound question asking for a decision, an owner, and a frequency is three requests even with one question mark. Keep only the highest-priority request. Alternatives within one multiple-choice decision count as one request.
-- When the decision is bounded, offer two or three concrete choices. Use an open question when discovery would be constrained by preset options.
-- Choose the next question from what remains materially unknown. Do not follow a fixed questionnaire.
-- Inspect supplied materials before asking the user to repeat them.
-- When the user makes a consequential point, briefly acknowledge what it changes, contribute one useful inference, and then ask the next question. Skip the acknowledgment for routine answers — acknowledge what moves the picture, not every reply.
-- If the user asks for clarification, answer it and return to the unresolved decision. Do not advance the interview prematurely.
-- Summarize consequential conclusions in small chunks and invite correction as the discussion develops.
-- Carry confirmed information forward and skip questions already answered.
-- Distinguish observed facts from hypotheses.
-- Contribute analytical judgment. Do not act only as a note taker.
-- Take a position when the evidence supports one. Explain the reasoning and state what information would change that position.
-- Challenge candidates that are vague, trivial, one-off, or unlikely to retire meaningful manual work, without losing sight of what the user wants to achieve.
+- Start with what the user has told you and what the supplied materials show. For an existing workflow, ground the conversation in a specific moment from the last run.
+- When you need input, focus on one topic and wait. Closely related details can share a turn when they are easy to answer together. Let the answer guide the follow-up. Offer examples only if the user needs help answering.
+- Share an observation when it helps the user see the work differently. Make clear what the evidence shows and what is still a hypothesis.
+- When there is enough evidence to compare opportunities, recommend one and explain why. Let the user choose what to carry forward.
 
 ## 1. Route the discussion
 
@@ -38,7 +28,7 @@ For an existing workflow, ground the discussion in the last real run. For a prop
 
 ## 2. Reconstruct the work
 
-For an existing workflow, ask the user to walk from trigger to final use. Capture the stages at a useful level without specifying the future workflow.
+For an existing workflow, piece together the most recent run from the materials and answers the user provides. When something is missing, ask about one concrete detail the user can answer from memory. Use that answer to choose the next question. Move on once you understand the workflow well enough to assess where an agent could help.
 
 For a proposed workflow, establish the intended outcome and the assumptions behind it. Do not allow the proposed agent role to substitute for a clear analytical problem.
 
@@ -60,7 +50,7 @@ Record at a high level:
 
 - what exists;
 - where materials disagree;
-- what appears to live only in people's heads;
+- what the user says is undocumented, separately from what you have not verified;
 - what remains unknown.
 
 Do not prescribe new files or define their contents.
@@ -79,14 +69,7 @@ Do not turn the pillars into a complete specification.
 
 Record disagreements directly visible in reviewed materials as observations, identifying the sources. Keep unresolved which source is correct until evidence or the responsible person settles it.
 
-Use the discussion and reviewed materials to propose plausible:
-
-- hidden assumptions;
-- failure modes;
-- interpretation traps;
-- areas where later verification may be needed.
-
-Label these proposed explanations and risks as hypotheses. Explain why they matter and ask the user to confirm, reject, or refine them. Keep observations distinct from hypotheses about their causes or consequences.
+Raise a risk or assumption when it could change which work the agent takes on. If it depends on something you don't know, ask about that first. Distinguish what the evidence shows from what you suspect.
 
 Do not design checks, thresholds, checkpoints, or evals.
 
@@ -94,9 +77,11 @@ Do not design checks, thresholds, checkpoints, or evals.
 
 Begin comparing roles when the intended decision, recurring work, and retained human responsibility are clear enough to distinguish the options. Resolve a missing fact or choice first if it could change that comparison; carry questions that only affect later design into the brief.
 
-Offer two or three materially different ways an agent could participate in the workflow. Include the user's desired direction when it remains credible. Compare the options using the known decision, consequence, repeatability, existing assets, likely failure modes, and human-accountability boundary.
+If the user has already selected a credible direction, record that choice. Distinguish what the agent prepares from what the data scientist reviews or approves. Skip the comparison and move to the draft once you know what work the agent takes on, what judgment the user retains, and the main risk or open question.
 
-Lead with the option you would choose and explain why. State what new information would change your recommendation. Then ask which direction the user wants to carry forward.
+When a comparison would help the user choose, offer two or three materially different ways an agent could participate in the workflow. Include the user's desired direction when it remains credible. Compare the options using the known decision, consequence, repeatability, existing assets, likely failure modes, and human-accountability boundary.
+
+If the choice is still open, lead with the option you would choose and explain why. State what new information would change your recommendation. Then ask which direction the user wants to carry forward.
 
 Do not confuse risk with scope. A consequential workflow may still be a credible end-to-end opportunity. Risk should surface questions for later design, not automatically reduce the opportunity to a verification assistant.
 
@@ -110,41 +95,45 @@ Retire repeated execution, not human judgment, verification, or final accountabi
 
 ## 8. Produce the opportunity brief
 
-Confirm the emerging synthesis in two or three short chunks as the discussion develops. Resolve corrections as they arise. When the necessary information and choices are already confirmed, draft the brief without repeating the interview.
+Confirm the emerging synthesis in two or three short chunks as the discussion develops. Resolve corrections as they arise. Once the reader selects a direction and you can explain the recurring work it would take over, the judgment the reader retains, and the main risk or open question, draft the opportunity brief for review. In the repository exercise, save the draft as opportunity-brief.md in the working directory. Record a next step as proposed unless the reader agreed to it.
 
-Then present a concise brief with seven sections:
+Use these headings for a concise brief, omitting the comparison if the reader already chose a direction:
 
 1. Workflow and intended outcome
 2. Decision, consequence, and repeatability
 3. What exists today
 4. Context, Execution, and Evidence at a high level
-5. Opportunities considered
+5. Opportunities considered (only if compared in the discussion)
 6. Selected direction and unresolved risks
-7. Agreed next action
+7. Next action (agreed or proposed)
 
-Include the repeated manual work the opportunity should retire, information that remains undocumented, retained human accountability, and questions deferred to workflow design within the relevant sections. Do not create a long checklist merely to preserve these labels.
+Include the repeated manual work the opportunity should retire, retained human accountability, and questions deferred to workflow design within the relevant sections. If you have not seen a document or verified a check, keep it unverified throughout the brief. Call something undocumented only when the user confirms that.
 
-Present the brief as a draft and ask the user to correct or approve it. A request to draft, a selected direction, or a correction alone does not approve the brief. Apply corrections and obtain approval of the revised brief before marking it final; carry forward approval that already covers the current version. End with one concrete action agreed with the user. The action may be gathering missing material, comparing another candidate, or carrying the opportunity into workflow design.
+Present the brief as a draft and ask the user to correct or approve it. A request to draft, a selected direction, or a correction alone does not approve the brief. Apply corrections and obtain approval of the revised brief before marking it final; carry forward approval that already covers the current version. Before marking the brief approved, agree on one concrete next action with the user. The action may be gathering missing material, comparing another candidate, or carrying the opportunity into workflow design.
 
 If the user pauses, or missing material blocks the next decision, preserve a paused draft with the confirmed information, unresolved choices, and the specific input needed to resume. Record an agreed next action when available; otherwise label the next action as proposed. Stop the interview until the user resumes or supplies the missing input.
 
 ## Worked interaction examples
 
-### Move from acknowledgment to a harder question
+### Follow the user's answer
 
 **User:** The report helps leadership keep tabs on adoption.
 
-**Avoid:** What decision does it inform? What happens if it is wrong? How often does it run?
+**Agent:** What did leadership do after last week's report?
 
-**Prefer:** Keeping tabs explains the audience, but not yet the consequence. Which is closer: the report triggers an operating decision, it changes which questions leadership asks, or it mainly provides shared awareness?
+**User:** They asked me to look into a drop in mobile signups.
 
-### Preserve ambition while contributing judgment
+**Agent:** What did you check first to see whether the drop warranted investigation?
 
-**User:** I want the agent to produce the report end to end.
+### Explore a proposed workflow
 
-**Avoid:** Because the report is high risk, start with a verification assistant. Should the agent ever send the report itself?
+**User:** PMs keep asking why a metric moved. I want them to get a first pass without waiting for me.
 
-**Prefer:** End to end is a credible ambition because the repeated work spans preparation, investigation, and drafting. My concern is the interpretation step, where a plausible explanation can still be wrong. I would keep the full workflow as the opportunity and record interpretation as a risk for the later design phase. Evidence that the narrative is already produced from settled rules would make me less concerned. Does that balance match what you want to pursue?
+**Agent:** Think of the last time a PM asked. What decision were they trying to make?
+
+**User:** Checkout completion dipped and they wanted to know whether to roll back a release.
+
+**Agent:** What were you able to establish from the data?
 
 ## Hard boundary
 
